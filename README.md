@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-First make a pull request from github or the command line to make a local copy of this repo. 
+First clone the repo from github or the command line to make a local copy. 
 
 
 Then install python:
