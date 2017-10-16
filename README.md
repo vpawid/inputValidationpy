@@ -34,6 +34,7 @@ There are currently four commands to choose from:
 
 The maintence command is for reading in conversion data to the database to be used to calculate currency exchange. If the database is not initialized it will prompt the user to set it up with the setup command. Once the maint command is passed it will show which currencies are currently avaliable and then continue to ask for other information. The currencies must be input in their three letter symbols:
 >usd eur gbp
+
 Then input the exchange rate, which must be a float and be a maximum of 7 digits big left of the decimal and a maximum of 5 digits big right of the decimal. 
 ```
 Enter a command :maint
