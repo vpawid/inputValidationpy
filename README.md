@@ -26,10 +26,25 @@ Through the terminal or command prompt, locate to the repo directory with the co
 
 Run the program by simply typing: **python convert.py** You should be prompted:
 ```
-Enter a command :
+login, admin, quit:
 ```
-There are currently four commands to choose from: 
+## login
+Allows users that have been inserted by the admin in the database to login and access account options
 
+## admin
+Allows admin to enter admin mode with a password
+If there is no current admin the command will prompt for a password and setup the admin account
+
+
+##### Here are the options for user level access
+#### 1. transfer
+given the string 'into' the process to transfer money into the current user's account from another user will begin
+given the string 'out' the process to transfer money into another users account from the current user will begin
+
+#### 2. quit
+Exits from program
+
+##### Here are the options for admin level access
 #### 1. maint
 
 The maintence command is for reading in conversion data to the database to be used to calculate currency exchange. If the database is not initialized it will prompt the user to set it up with the setup command. Once the maint command is passed it will show which currencies are currently avaliable and then continue to ask for other information. The currencies must be input in their three letter symbols:
@@ -70,6 +85,21 @@ Enter a currency which you want to convert to or type cancel:eur
 Enter amount to convert or type cancel:1200.00
 usd to eur at a rate of 0.85 = 1020.0
 ```
+#### 5. adduser
+
+Command to add new users to the database
+
+#### 6. deleteuser
+
+Command to delete users from the database
+
+#### 7. add
+
+Command to add more money to any account
+
+#### 8. sub
+
+Command to remove an amount of money from any account
 
 ## Author
 
