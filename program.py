@@ -15,6 +15,7 @@ loggedIn = False
 
 #main function for the interface
 def main():
+	setup()
 	while True:
 		arg = raw_input("login, admin, quit : ")
 		reg = re.compile('^login$|^admin$|^quit$')
@@ -161,7 +162,6 @@ def delUser():
 #add user to usertbl
 def addUser():
 	#check to see if the user exists
-	print" wtf"
 	user = autoCheckUser("username : ","User already exist please enter another username",True)
 	if not user:
 		return
